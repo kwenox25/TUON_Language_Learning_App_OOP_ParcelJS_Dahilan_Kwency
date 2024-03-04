@@ -1,0 +1,27 @@
+@use "../abstracts" as a;
+
+#languages-con {
+  background-color: a.$yellow;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+#languages-con h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.language-list {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.language-list img {
+  max-width: 80%;
+}
