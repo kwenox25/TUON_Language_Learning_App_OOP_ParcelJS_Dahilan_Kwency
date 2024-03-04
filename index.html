@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>TUON</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script defer type="module" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js
+"></script>
+  </head>
+
+  <body data-page="home">
+    <h1 class="hidden">TUON Learning App</h1>
+    <div id="sticky-nav-con">
+      <header class="grid-con" id="main-header">
+        <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+          <a href="index.html" alt="tuon logo" class="flex-item">
+            <img src="images/tuon-logo.svg" />
+          </a>
+        </div>
+        <nav
+          id="main-nav"
+          class="col-span-full m-col-start-3 m-col-end-13 l-col-start-4 l-col-end-13"
+        >
+          <h2 class="hidden">Main Navigation</h2>
+          <button id="button"></button>
+          <div id="burger-con">
+            <ul id="burger-menu">
+              <li><a href="index.html">Languages</a></li>
+              <li><a href="#">Why TUON?</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Learn for Free</a></li>
+              <li><a href="#">Get Started</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <section class="grid-con" id="hero">
+      <div class="col-span-full heroHeader">
+        <h2>
+          YOUR GATEWAY <br />
+          TO MULTILINGUAL<br />
+          PROFICIENCY
+        </h2>
+      </div>
+      <img
+        sizes="100vw"
+        srcset="
+          images/hero-image_ymovwk_c_scale,w_320.png   320w,
+          images/hero-image_ymovwk_c_scale,w_888.png   888w,
+          images/hero-image_ymovwk_c_scale,w_1349.png 1349w,
+          images/hero-image_ymovwk_c_scale,w_1755.png 1755w,
+          images/hero-image_ymovwk_c_scale,w_2076.png 2076w,
+          images/hero-image_ymovwk_c_scale,w_2388.png 2388w,
+          images/hero-image_ymovwk_c_scale,w_2770.png 2770w,
+          images/hero-image_ymovwk_c_scale,w_3280.png 3280w
+        "
+        src="images/hero-image_ymovwk_c_scale,w_3280.png"
+        alt="hero image"
+        id="hero-image"
+        class="col-span-full"
+      />
+      <p class="col-span-full">
+        Get access to compact lessons from the experts and connect with a
+        community of native speakers to help you master words faster.
+      </p>
+      <div
+        class="col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-3 buttonGreen"
+      >
+        Get Started
+      </div>
+    </section>
+  </body>
+</html>

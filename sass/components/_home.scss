@@ -1,0 +1,10 @@
+@use "../abstracts" as a;
+
+body {
+  font-family: a.$heading-font-family;
+  background-color: a.$body-color;
+}
+
+h2 {
+  font-family: "Unbounded", sans-serif;
+}
