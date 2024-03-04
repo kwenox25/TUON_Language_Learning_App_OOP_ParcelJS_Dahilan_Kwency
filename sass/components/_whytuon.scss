@@ -1,0 +1,29 @@
+@use "../abstracts" as a;
+
+#why-tuon-con {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+#why-tuon-con h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-container h4 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: a.$primary-color;
+}
