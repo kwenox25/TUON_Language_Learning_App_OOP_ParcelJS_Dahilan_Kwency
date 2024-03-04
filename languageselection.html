@@ -55,6 +55,16 @@
         <div class="col-span-full content-language">
           <h3>What would you like to learn?</h3>
         </div>
+        <div>
+          <ul id="languageList">
+            <li><a href="#">Spanish</a></li>
+            <li><a href="#">French</a></li>
+            <li><a href="#">Tagalog</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id="greetingsList"></ul>
+        </div>
       </section>
     </main>
 
@@ -123,19 +133,5 @@
         </section>
       </div>
     </footer>
-
-    <!-- Vue.js script -->
-    <script type="module">
-      import { createApp } from "vue";
-
-      createApp({
-        data() {
-          return {
-            title: "WHAT'S YOUR NAME?",
-            name: "",
-          };
-        },
-      }).mount("#app");
-    </script>
   </body>
 </html>
