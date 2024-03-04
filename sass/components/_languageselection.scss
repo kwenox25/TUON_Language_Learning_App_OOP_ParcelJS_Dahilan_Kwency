@@ -10,11 +10,11 @@
   text-align: right;
 }
 
-#getting-to-know2 {
+#languageSelection-con {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // // justify-content: center;
 }
 
 .meter2 {
@@ -56,6 +56,10 @@
 
 .vue-section-map {
   margin-top: 100px;
+}
+
+.content-language h3 {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

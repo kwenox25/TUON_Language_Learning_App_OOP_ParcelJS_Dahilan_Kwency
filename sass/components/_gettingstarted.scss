@@ -90,9 +90,34 @@
 // .afterNameEntered {
 //   opacity: 0;
 // }
+
+.afterNameEntered {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.buttonBegin {
+  text-align: center;
+  background-color: a.$secondary-color;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+  width: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: a.$body-color;
+}
+
+.buttonBegin:hover {
+  background-color: a.$primary-color;
+  color: a.$yellow;
+}
+
 @media screen and (min-width: 1200px) {
   .gobackdiv {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-left: 50px;
   }
   .gobackdiv a {

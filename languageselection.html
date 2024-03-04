@@ -29,17 +29,8 @@
 
     <link href="css/grid.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-
-    <!-- Import map for Vue.js -->
-    <script type="importmap">
-      {
-        "imports": {
-          "vue": "https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js"
-        }
-      }
-    </script>
   </head>
-  <body data-page="gettingStarted">
+  <body data-page="languageSelection">
     <h1 class="hidden">TUON Getting Started</h1>
     <div id="sticky-nav-con">
       <header class="grid-con" id="main-header">
@@ -56,18 +47,13 @@
       </header>
     </div>
     <main>
-      <section class="grid-con" id="getting-to-know2">
+      <section class="grid-con" id="languageSelection-con">
         <h2 class="hidden">Getting Started</h2>
-        <div class="meter2 col-span-full m-col-start-4 m-col-end-10">
+        <div class="meter2 col-span-full">
           <span class="percentage2"><span class="progress2"></span></span>
         </div>
-
-        <div class="col-span-full vue-section-map" id="app">
-          <h2>{{title}}</h2>
-          <form class="nameForm">
-            <label>Please enter first name</label><br />
-            <input type="text" v-model="name" />
-          </form>
+        <div class="col-span-full content-language">
+          <h3>What would you like to learn?</h3>
         </div>
       </section>
     </main>
