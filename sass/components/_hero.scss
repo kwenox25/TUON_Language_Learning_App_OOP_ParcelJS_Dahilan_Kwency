@@ -8,7 +8,7 @@
 
 #hero-image {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .buttonGreen {
@@ -40,6 +40,16 @@
 
 @media screen and (min-width: 1200px) {
   .heroHeader h2 {
-    font-size: 4.5em;
+    margin-top: 20px;
+    font-size: 6em;
+  }
+
+  #hero p {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  .buttonGreen {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
