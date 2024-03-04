@@ -1,8 +1,5 @@
-// import { drawSVG } from "./modules/drawsvg.js";
-// import { increasingNumber } from "./modules/increasingNumber.js";
-// import { charts } from "./modules/charts.js";
-
 import { burgerMenu } from "./modules/burgermenu.js";
+import { scrollTrigger } from "./modules/scrolltrigger.js";
 
 // if (document.body.dataset.page === "home") {
 //   drawSVG();
@@ -14,3 +11,4 @@ import { burgerMenu } from "./modules/burgermenu.js";
 // }
 
 burgerMenu();
+scrollTrigger();

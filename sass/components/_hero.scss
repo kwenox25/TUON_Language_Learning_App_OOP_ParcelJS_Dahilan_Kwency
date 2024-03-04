@@ -19,6 +19,19 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.buttonGreen a {
+  text-decoration: none;
+  color: a.$body-color;
+}
+
+.buttonGreen:hover {
+  background-color: a.$primary-color;
+}
+
+.buttonGreen a:hover {
+  color: a.$yellow;
+}
 @media screen and (min-width: 768px) {
   .heroHeader h2 {
     font-size: 3em;
