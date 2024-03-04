@@ -1,0 +1,88 @@
+@use "../abstracts" as a;
+
+.gobackdiv {
+  margin-top: 20px;
+}
+.goBack {
+  text-decoration: none;
+  color: a.$body-color;
+  font-weight: 600;
+  text-align: right;
+}
+
+#getting-to-know2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+
+.meter2 {
+  height: 15px;
+  border-radius: 30px;
+  margin-top: 50px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+}
+
+.meter2 span {
+  display: block;
+  height: 100%;
+}
+.percentage2 {
+  width: 100%;
+}
+
+.progress2 {
+  background-color: a.$secondary-color;
+  animation: progressBar2 3s ease-in-out both;
+}
+
+@keyframes progressBar2 {
+  0% {
+    width: 50%; /* Start from 50% */
+  }
+  100% {
+    width: 100%; /* End at 100% */
+  }
+}
+
+#app,
+.meter2 {
+  display: grid;
+  grid-row: 1/1;
+}
+
+.vue-section-map {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+.nameForm label {
+  font-family: a.$heading-font-family;
+  font-size: 1em;
+}
+
+.nameForm input {
+  outline: none;
+  border: none;
+  border-bottom: 5px solid black;
+  width: 350px;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.vue-section-map {
+  text-align: center;
+}
+
+#app h2 {
+  font-size: 3em;
+}
+
+@media screen and (min-width: 1200px) {
+}

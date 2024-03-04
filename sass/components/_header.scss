@@ -1,6 +1,7 @@
 @use "../abstracts" as a;
 #sticky-nav-con {
   background-color: a.$secondary-color;
+  height: 56px;
 }
 
 #main-nav {
@@ -87,6 +88,9 @@
 
 @media screen and (min-width: 768px) {
   #sticky-nav-con {
+    height: 55px;
+  }
+  #sticky-nav-con {
     // position: sticky;
 
     top: 0px;
@@ -137,6 +141,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  #sticky-nav-con {
+    height: 80px;
+  }
   #main-header {
     height: 80px;
   }

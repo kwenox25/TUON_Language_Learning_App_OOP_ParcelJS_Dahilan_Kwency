@@ -1,0 +1,74 @@
+@use "../abstracts" as a;
+
+.gobackdiv {
+  margin-top: 20px;
+}
+.goBack {
+  text-decoration: none;
+  color: a.$body-color;
+  font-weight: 600;
+  text-align: right;
+}
+
+#getting-to-know {
+  height: 100vh;
+}
+
+.meter {
+  margin-top: 50px;
+  height: 15px;
+  border-radius: 30px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+}
+.percentage {
+  width: 50%;
+}
+
+.progress {
+  background-color: a.$secondary-color;
+  -webkit-animation: progressBar 3s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: progressBar 3s ease-in-out;
+  -moz-animation-fill-mode: both;
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gobackdiv {
+    margin-top: 30px;
+  }
+}
+
+.nameForm label {
+  font-family: a.$heading-font-family;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.vue-section-map {
+  text-align: center;
+}
