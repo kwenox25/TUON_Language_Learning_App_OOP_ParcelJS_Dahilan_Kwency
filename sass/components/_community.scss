@@ -1,0 +1,45 @@
+@use "../abstracts" as a;
+
+#community-con {
+  background-color: a.$secondary-color;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+#community-con h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.community p {
+  color: a.$body-color;
+  text-align: center;
+}
+
+.apps {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.apps ul {
+  padding: 0px;
+}
+
+.apps ul li {
+  list-style: none;
+}
+
+.apps ul li img {
+  max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .apps ul li {
+    display: inline;
+  }
+}

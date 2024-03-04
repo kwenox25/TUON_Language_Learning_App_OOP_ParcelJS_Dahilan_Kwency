@@ -1,0 +1,110 @@
+@use "../abstracts" as a;
+
+#footer-con {
+  color: a.$body-color;
+  margin-bottom: 40px;
+}
+
+.aboutUs-links h3,
+.learnLinks h3 {
+  padding-top: 40px;
+  color: #1e1e1e;
+  font-weight: 400;
+}
+
+.aboutUs-links ul,
+.learnLinks ul {
+  padding: 0;
+}
+
+.aboutUs-links ul li,
+.learnLinks ul li {
+  margin-bottom: 10px;
+}
+
+.aboutUs-links ul li a,
+.learnLinks ul li a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.aboutUs-links ul li a:hover,
+.learnLinks ul li a:hover {
+  color: a.$primary-color;
+}
+
+.right-section-footer {
+  padding-top: 40px;
+}
+
+#footer-icons h3,
+#newsletter h3 {
+  margin-top: 25px;
+  color: #1e1e1e;
+  font-weight: 400;
+}
+
+#footer-icons ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-between;
+  color: a.$primary-color;
+}
+
+#footer-icons ul li {
+  display: inline;
+}
+#footer-icons ul li i {
+  font-size: 2.5em;
+  color: a.$secondary-color;
+}
+
+#newsletter input {
+  outline: none;
+  background: transparent;
+  border: none;
+  border: 2px solid a.$secondary-color;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+#newsletter {
+  margin-bottom: 50px;
+}
+#newsletter input[type="submit"] {
+  margin-top: 10px;
+  height: 40px;
+  border: none;
+  background-color: a.$secondary-color;
+  transition: all 200ms ease-in;
+  border-radius: 20px;
+  color: a.$body-color;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: a.$heading-font-family;
+}
+
+#newsletter input[type="submit"]:hover {
+  background-color: a.$primary-color;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  //   #footer-icons ul li i {
+  //     font-size: 2.5em;
+  //     margin-right: 20px;
+  //     color: a.$secondary-color;
+  //   }
+}
+
+@media screen and (min-width: 1200px) {
+  //   #footer-icons ul li i {
+  //     font-size: 2.5em;
+  //     margin-right: 50px;
+  //     color: a.$secondary-color;
+  //   }
+}

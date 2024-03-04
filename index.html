@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>TUON</title>
+    <title>TUON Learning App</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
       rel="stylesheet"
@@ -56,155 +65,248 @@
             <ul id="burger-menu">
               <li><a href="#languages-con">Languages</a></li>
               <li><a href="#why-tuon-con">Why TUON?</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Learn for Free</a></li>
+              <li><a href="#community-con">Community</a></li>
+              <li><a href="#footer">Contact</a></li>
               <li><a href="#">Get Started</a></li>
             </ul>
           </div>
         </nav>
       </header>
     </div>
-    <section class="grid-con" id="hero">
-      <div class="col-span-full heroHeader">
-        <h2>
-          YOUR GATEWAY <br />
-          TO MULTILINGUAL<br />
-          PROFICIENCY
-        </h2>
-      </div>
-      <img
-        sizes="100vw"
-        srcset="
-          images/hero-image_ymovwk_c_scale,w_320.png   320w,
-          images/hero-image_ymovwk_c_scale,w_888.png   888w,
-          images/hero-image_ymovwk_c_scale,w_1349.png 1349w,
-          images/hero-image_ymovwk_c_scale,w_1755.png 1755w,
-          images/hero-image_ymovwk_c_scale,w_2076.png 2076w,
-          images/hero-image_ymovwk_c_scale,w_2388.png 2388w,
-          images/hero-image_ymovwk_c_scale,w_2770.png 2770w,
-          images/hero-image_ymovwk_c_scale,w_3280.png 3280w
-        "
-        src="images/hero-image_ymovwk_c_scale,w_3280.png"
-        alt="hero image"
-        id="hero-image"
-        class="col-span-full"
-      />
-      <p class="col-span-full">
-        Get access to compact lessons from the experts and connect with a
-        community of native speakers to help you master words faster.
-      </p>
-      <div
-        class="col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-3 buttonGreen"
-      >
-        <a href="#">Get Started</a>
-      </div>
-    </section>
-    <section id="languages-con">
-      <h2 class="hidden">Language Selection</h2>
-      <div class="grid-con">
-        <div class="col-span-full">
-          <h3>I want to learn...</h3>
+    <main>
+      <section class="grid-con" id="hero">
+        <div class="col-span-full heroHeader">
+          <h2>
+            YOUR GATEWAY <br />
+            TO MULTILINGUAL<br />
+            PROFICIENCY
+          </h2>
         </div>
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/spanish.png" alt="spanish" />
-            </li>
-            <li>Spanish</li>
-          </ul>
+        <img
+          sizes="100vw"
+          srcset="
+            images/hero-image_ymovwk_c_scale,w_320.png   320w,
+            images/hero-image_ymovwk_c_scale,w_888.png   888w,
+            images/hero-image_ymovwk_c_scale,w_1349.png 1349w,
+            images/hero-image_ymovwk_c_scale,w_1755.png 1755w,
+            images/hero-image_ymovwk_c_scale,w_2076.png 2076w,
+            images/hero-image_ymovwk_c_scale,w_2388.png 2388w,
+            images/hero-image_ymovwk_c_scale,w_2770.png 2770w,
+            images/hero-image_ymovwk_c_scale,w_3280.png 3280w
+          "
+          src="images/hero-image_ymovwk_c_scale,w_3280.png"
+          alt="hero image"
+          id="hero-image"
+          class="col-span-full"
+        />
+        <p class="col-span-full">
+          Get access to compact lessons from the experts and connect with a
+          community of native speakers to help you master words faster.
+        </p>
+        <div
+          class="col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-3 buttonGreen"
+        >
+          <a href="#">Get Started</a>
+        </div>
+      </section>
+      <section id="languages-con">
+        <h2 class="hidden">Language Selection</h2>
+        <div class="grid-con">
+          <div class="col-span-full">
+            <h3>I want to learn...</h3>
+          </div>
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/spanish.png" alt="spanish" />
+              </li>
+              <li>Spanish</li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/french.png" alt="french" />
+              </li>
+              <li>french</li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/tagalog.png" alt="tagalog" />
+              </li>
+              <li>tagalog</li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/nihongo.png" alt="nihongo" />
+              </li>
+              <li>nihongo</li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/hangul.png" alt="hangul" />
+              </li>
+              <li>hangul</li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 m-col-span-2">
+            <ul class="language-list">
+              <li>
+                <img src="images/italian.png" alt="italian" />
+              </li>
+              <li>italian</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="why-tuon-con" class="grid-con">
+        <h2 class="hidden">Why TUON</h2>
+        <h3 class="col-span-full">Why learn a language with TUON?</h3>
+        <div class="col-span-full m-col-start-1 m-col-end-7 why1">
+          <img src="https://placehold.co/600x400" alt="placeholder" />
+        </div>
+        <div class="col-span-full m-col-start-7 m-col-end-13 flex-container">
+          <div class="text-center">
+            <h4>Diverse Learning Experience</h4>
+            <p>
+              Learn more together<br />
+              TUON offers a diverse and immersive learning experience, allowing
+              you to explore multiple languages and cultures simultaneously.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-full m-col-start-7 m-col-end-13 why2">
+          <img src="https://placehold.co/600x400" alt="placeholder" />
         </div>
 
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/french.png" alt="french" />
-            </li>
-            <li>french</li>
-          </ul>
+        <div
+          class="col-span-full m-col-start-1 m-col-end-7 flex-container why4"
+        >
+          <div class="text-center">
+            <h4>Practical Skills Development</h4>
+            <p>
+              Learn for real life<br />
+              Studying languages with TUON equips you with practical
+              communication skills that are invaluable in today's interconnected
+              world.
+            </p>
+          </div>
         </div>
 
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/tagalog.png" alt="tagalog" />
-            </li>
-            <li>tagalog</li>
-          </ul>
+        <div class="col-span-full m-col-start-1 m-col-end-7 why3">
+          <img src="https://placehold.co/600x400" alt="placeholder" />
         </div>
-
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/nihongo.png" alt="nihongo" />
-            </li>
-            <li>nihongo</li>
-          </ul>
+        <div class="col-span-full m-col-start-7 m-col-end-13 flex-container">
+          <div class="text-center">
+            <h4>Social Impact</h4>
+            <p>
+              Learn with confidence<br />
+              By learning languages, you contribute to breaking down barriers
+              and fostering greater intercultural understanding and harmony in
+              an increasingly interconnected world.
+            </p>
+          </div>
         </div>
-
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/hangul.png" alt="hangul" />
-            </li>
-            <li>hangul</li>
-          </ul>
-        </div>
-
-        <div class="col-span-2 m-col-span-2">
-          <ul class="language-list">
-            <li>
-              <img src="images/italian.png" alt="italian" />
-            </li>
-            <li>italian</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="why-tuon-con" class="grid-con">
-      <h2 class="hidden">Why TUON</h2>
-      <h3 class="col-span-full">Why learn a language with TUON?</h3>
-      <div class="col-span-full m-col-start-1 m-col-end-7">
-        <img src="https://placehold.co/600x400" alt="placeholder" />
-      </div>
-      <div class="col-span-full m-col-start-7 m-col-end-13 flex-container">
-        <div class="text-center">
-          <h4>Diverse Learning Experience</h4>
-          <p>
-            Learn more together<br />
-            TUON offers a diverse and immersive learning experience, allowing
-            you to explore multiple languages and cultures simultaneously.
+      </section>
+      <section id="community-con">
+        <h2 class="hidden">Community Section</h2>
+        <div class="grid-con community">
+          <div class="col-span-full">
+            <h3>Join our online learning community</h3>
+          </div>
+          <p class="col-span-full m-col-start-3 m-col-end-11">
+            Whatever your reason for learning a language, we’ve got you covered.
+            Learn for any goal with simplified courses and short, but focused
+            lessons. You’re in control.
           </p>
         </div>
-      </div>
-
-      <div class="col-span-full m-col-start-1 m-col-end-7 flex-container">
-        <div class="text-center">
-          <h4>Practical Skills Development</h4>
-          <p>
-            Learn for real life<br />
-            Studying languages with TUON equips you with practical communication
-            skills that are invaluable in today's interconnected world.
-          </p>
+        <div class="apps col-span-full">
+          <ul>
+            <li>
+              <img src="images/app-store.png" alt="apple store" />
+            </li>
+            <li>
+              <img src="images/google-play.png" alt="play store" />
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="col-span-full m-col-start-7 m-col-end-13">
-        <img src="https://placehold.co/600x400" alt="placeholder" />
-      </div>
-
-      <div class="col-span-full m-col-start-1 m-col-end-7">
-        <img src="https://placehold.co/600x400" alt="placeholder" />
-      </div>
-      <div class="col-span-full m-col-start-7 m-col-end-13 flex-container">
-        <div class="text-center">
-          <h4>Social Impact</h4>
-          <p>
-            Learn with confidence<br />
-            By learning languages, you contribute to breaking down barriers and
-            fostering greater intercultural understanding and harmony in an
-            increasingly interconnected world.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
+  <footer id="footer-con">
+    <div class="grid-con">
+      <h2 class="hidden">Footer Info</h2>
+      <section class="about-links col-span-full m-col-start-1 m-col-end-4">
+        <div class="aboutUs-links">
+          <h3>ABOUT US</h3>
+          <ul>
+            <li><a href="#">About Tuon</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partner with Tuon</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Brand Guidelines</a></li>
+            <li><a href="#">Approach</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="learn-links col-span-full m-col-start-4 m-col-end-8">
+        <div class="learnLinks">
+          <h3>LEARN LANGUAGES</h3>
+          <ul>
+            <li><a href="#">Learn Spanish Online</a></li>
+            <li><a href="#">Learn French Online</a></li>
+            <li><a href="#">Learn Tagalog Online</a></li>
+            <li><a href="#">Learn Nihongo Online</a></li>
+            <li><a href="#">Learn Hangul Online</a></li>
+            <li><a href="#">Learn Italian Online</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="col-span-full m-col-start-9 m-col-end-13 right-section-footer"
+      >
+        <div>
+          <h3 class="hidden">Tuon Logo</h3>
+          <img src="images/tuon-logo-green.svg" alt="tuon logo green" />
+        </div>
+        <div id="newsletter">
+          <h3>NEWSLETTER</h3>
+          <form method="POST" enctype="text/plain">
+            <input
+              name="emailAddress"
+              type="text"
+              required
+              placeholder="Email address here"
+            />
+            <input name="submit" type="submit" value="SUBMIT" />
+          </form>
+        </div>
+        <div id="footer-icons">
+          <h3>FOLLOW US</h3>
+          <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-youtube-play"></i></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
 </html>

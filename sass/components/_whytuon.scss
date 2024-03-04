@@ -8,11 +8,10 @@
 #why-tuon-con h3 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-weight: normal;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.8em;
-  letter-spacing: 2px;
 }
 
 .flex-container {
@@ -23,7 +22,12 @@
 }
 
 .flex-container h4 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
   color: a.$primary-color;
+}
+
+@media screen and (min-width: 768px) {
+  .why2,
+  .why4 {
+    grid-row: 3/5;
+  }
 }
