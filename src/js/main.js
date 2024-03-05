@@ -44,12 +44,10 @@ if (document.body.getAttribute("data-page") === "home") {
   function renderGreetings() {
     greetingsList.innerHTML = "";
 
-    const translations = languageSelection.translations;
-
-    for (const key in translations) {
-      if (Object.hasOwnProperty.call(translations, key)) {
+    for (const key in languageSelection) {
+      if (Object.hasOwnProperty.call(languageSelection, key)) {
         const li = document.createElement("li");
-        li.textContent = `${key}: "${translations[key]}"`;
+        li.textContent = `${key}: "${languageSelection[key]}"`;
         greetingsList.appendChild(li);
       }
     }

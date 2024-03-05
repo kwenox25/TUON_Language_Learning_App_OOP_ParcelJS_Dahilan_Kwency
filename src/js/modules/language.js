@@ -1,97 +1,104 @@
-class Spanish {
-  constructor() {
-    this.translations = {
-      hi: "Hola",
-      goodMorning: "Buenos días",
-      goodNight: "Buenas noches",
-      iLoveYou: "Te quiero",
-      sorry: "Lo siento",
-      thankyou: "Gracias",
-      excuseMe: "Perdón",
-    };
+class Language {
+  constructor(hi, goodMorning, goodNight, iLoveYou, sorry, thankyou, excuseMe) {
+    this.hi = hi;
+    this.goodMorning = goodMorning;
+    this.goodNight = goodNight;
+    this.iLoveYou = iLoveYou;
+    this.sorry = sorry;
+    this.thankyou = thankyou;
+    this.excuseMe = excuseMe;
   }
 
   translate(key) {
-    if (this.translations[key]) {
-      return this.translations[key];
+    if (this[key]) {
+      return this[key];
     } else {
-      return `Translation not available for "${key}" in Spanish`;
+      return `Translation not available for "${key}" in this language`;
     }
   }
 }
 
-class French extends Spanish {
+class Spanish extends Language {
   constructor() {
-    super();
-    this.translations = {
-      hi: "Bonjour",
-      goodMorning: "Bonjour",
-      goodNight: "Bonne nuit",
-      iLoveYou: "Je t'aime",
-      sorry: "Désolé",
-      thankyou: "Merci",
-      excuseMe: "Excusez-moi",
-    };
+    super(
+      "Hola",
+      "Buenos días",
+      "Buenas noches",
+      "Te quiero",
+      "Lo siento",
+      "Gracias",
+      "Perdón"
+    );
   }
 }
 
-class Tagalog extends Spanish {
+class French extends Language {
   constructor() {
-    super();
-    this.translations = {
-      hi: "Kamusta",
-      goodMorning: "Magandang umaga",
-      goodNight: "Magandang gabi",
-      iLoveYou: "Mahal kita",
-      sorry: "Pasensya na",
-      thankyou: "Salamat",
-      excuseMe: "Paumanhin",
-    };
+    super(
+      "Bonjour",
+      "Bonjour",
+      "Bonne nuit",
+      "Je t'aime",
+      "Désolé",
+      "Merci",
+      "Excusez-moi"
+    );
   }
 }
 
-class Nihongo extends Spanish {
+class Tagalog extends Language {
   constructor() {
-    super();
-    this.translations = {
-      hi: "Konnichiwa",
-      goodMorning: "Ohayou gozaimasu",
-      goodNight: "Oyasumi nasai",
-      iLoveYou: "Aishiteru",
-      sorry: "Sumimasen",
-      thankyou: "Arigatou gozaimasu",
-      excuseMe: "Gomen nasai",
-    };
+    super(
+      "Kamusta",
+      "Magandang umaga",
+      "Magandang gabi",
+      "Mahal kita",
+      "Pasensya na",
+      "Salamat",
+      "Paumanhin"
+    );
   }
 }
 
-class Hangul extends Spanish {
+class Nihongo extends Language {
   constructor() {
-    super();
-    this.translations = {
-      hi: "Annyeonghaseyo",
-      goodMorning: "Annyeonghaseyo",
-      goodNight: "Annyeonghi jumuseyo",
-      iLoveYou: "Saranghae",
-      sorry: "Mianhamnida",
-      thankyou: "Gamsahamnida",
-      excuseMe: "Silryehabnida",
-    };
+    super(
+      "Konnichiwa",
+      "Ohayou gozaimasu",
+      "Oyasumi nasai",
+      "Aishiteru",
+      "Sumimasen",
+      "Arigatou gozaimasu",
+      "Gomen nasai"
+    );
   }
 }
 
-class Italian extends Spanish {
+class Hangul extends Language {
   constructor() {
-    super();
-    this.translations = {
-      hi: "Ciao",
-      goodMorning: "Buongiorno",
-      goodNight: "Buona notte",
-      iLoveYou: "Ti amo",
-      sorry: "Mi dispiace",
-      thankyou: "Grazie",
-      excuseMe: "Scusi",
-    };
+    super(
+      "Annyeonghaseyo",
+      "Annyeonghaseyo",
+      "Annyeonghi jumuseyo",
+      "Saranghae",
+      "Mianhamnida",
+      "Gamsahamnida",
+      "Silryehabnida"
+    );
+  }
+}
+
+class Italian extends Language {
+  constructor() {
+    super(
+      "Ciao",
+      "Buongiorno",
+      "Buona notte",
+      "Ti amo",
+      "Mi dispiace",
+      "Grazie",
+      "Scusi"
+    );
   }
 }
 
