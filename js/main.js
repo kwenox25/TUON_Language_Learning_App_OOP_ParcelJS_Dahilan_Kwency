@@ -1,45 +1,51 @@
 import { burgerMenu } from "./modules/burgermenu.js";
 import { scrollTrigger } from "./modules/scrolltrigger.js";
-import { Spanish, French, Tagalog } from "./modules/language.js";
+// import { Spanish, French, Tagalog } from "./modules/language.js";
+import { Guitar, BassGuitar, Keytar } from "./modules/guitar.js";
 
 if (document.body.getAttribute("data-page") === "home") {
   burgerMenu();
   scrollTrigger();
 } else if (document.body.getAttribute("data-page") === "languageSelection") {
-  let languageSelection = new Spanish();
+  const fenderStrat = new Guitar(
+    "Fender",
+    "Stratocastor",
+    "Ocean Blue",
+    6,
+    "Single Coil",
+    "HumberBucker"
+  );
 
-  const languageList = document.querySelector("#languageList");
-  const greetingsList = document.querySelector("#greetingsList");
+  const gretschWhiteFalcon = new Guitar(
+    "Gretsch",
+    "Falcon",
+    "White",
+    12,
+    "Filter'Tron",
+    "Filter'Tron"
+  );
 
-  languageList.addEventListener("click", (event) => {
-    if (event.target.tagName === "A") {
-      const selectedLanguage = event.target.textContent.toLowerCase();
-      switch (selectedLanguage) {
-        case "french":
-          languageSelection = new French();
-          break;
-        case "tagalog":
-          languageSelection = new Tagalog();
-          break;
-        default:
-          languageSelection = new Spanish();
-          break;
-      }
-      renderGreetings();
-    }
-  });
+  const alesisKeytar = new Keytar(
+    "Alesis",
+    "Vortex",
+    "Blue",
+    0,
+    "None",
+    "None",
+    49
+  );
 
-  function renderGreetings() {
-    greetingsList.innerHTML = "";
+  console.log(alesisKeytar);
+  alesisKeytar.slide();
 
-    const keys = Object.keys(languageSelection.translations);
+  console.log(fenderStrat);
+  fenderStrat.strum();
 
-    keys.forEach((key) => {
-      const li = document.createElement("li");
-      li.textContent = languageSelection.translate(key);
-      greetingsList.appendChild(li);
-    });
-  }
-  console.log("OOP working");
-  renderGreetings();
+  console.log(gretschWhiteFalcon);
+  gretschWhiteFalcon.strum();
+
+  const fenderPrecisionBass = new BassGuitar();
+
+  console.log(fenderPrecisionBass);
+  fenderPrecisionBass.slapDaBass();
 }

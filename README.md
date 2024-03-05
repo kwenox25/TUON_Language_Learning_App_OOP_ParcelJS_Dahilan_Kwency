@@ -1,6 +1,15 @@
-# Parcel JS - OOP
+# TUON Learning App
 
-In this assignment, I leveraged the power of Ajax and API integration to dynamically fetch and display data for Ajax Earbuds, a stylish and cutting-edge audio device. Through the use of JavaScript, I implemented asynchronous requests to an external API, retrieving information about the earbuds' materials and info boxes. The fetched data was seamlessly integrated into the web application, providing users with real-time details about the product. This approach not only enhances the user experience by ensuring up-to-date information but also showcases the seamless synergy between front-end technologies and external data sources.
+TUON Learning App is a web application designed to help users learn languages through interactive lessons and exercises. Built with modern JavaScript using Object-Oriented Programming (OOP) principles, this app provides an intuitive and immersive learning experience for language enthusiasts of all levels.
+
+## Technologies Used
+
+1. JavaScript (ES6+): Leveraging the power of modern JavaScript for dynamic and interactive functionality.
+2. Object-Oriented Programming (OOP): Structuring code using OOP principles for better organization, reusability, and maintainability.
+3. Parcel JS: Bundling the application using Parcel JS for optimized performance and easy deployment.
+4. HTML5 & SASS (SCSS): Utilizing the latest web standards for a polished user interface and user experience.
+5. Vue.js: Integrating Vue.js for building reactive and component-based user interfaces.
+6. Git & GitHub: Version control and collaboration using Git and GitHub for seamless development workflows.
 
 ## Contributing
 
@@ -12,7 +21,7 @@ In this assignment, I leveraged the power of Ajax and API integration to dynamic
 
 ## Credits
 
-Kwency Maye Dahilan
+Kwency Maye Dahilan | Apple Grace Gesalan
 
 ## License
 
