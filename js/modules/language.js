@@ -50,6 +50,49 @@ class Tagalog extends Spanish {
   }
 }
 
-// Add more language subclasses as needed
+class Nihongo extends Spanish {
+  constructor() {
+    super();
+    this.translations = {
+      hi: "Konnichiwa",
+      goodMorning: "Ohayou gozaimasu",
+      goodNight: "Oyasumi nasai",
+      iLoveYou: "Aishiteru",
+      sorry: "Sumimasen",
+      thankyou: "Arigatou gozaimasu",
+      excuseMe: "Gomen nasai",
+    };
+  }
+}
 
-export { Spanish, French, Tagalog };
+class Hangul extends Spanish {
+  constructor() {
+    super();
+    this.translations = {
+      hi: "Annyeonghaseyo",
+      goodMorning: "Annyeonghaseyo",
+      goodNight: "Annyeonghi jumuseyo",
+      iLoveYou: "Saranghae",
+      sorry: "Mianhamnida",
+      thankyou: "Gamsahamnida",
+      excuseMe: "Silryehabnida",
+    };
+  }
+}
+
+class Italian extends Spanish {
+  constructor() {
+    super();
+    this.translations = {
+      hi: "Ciao",
+      goodMorning: "Buongiorno",
+      goodNight: "Buona notte",
+      iLoveYou: "Ti amo",
+      sorry: "Mi dispiace",
+      thankyou: "Grazie",
+      excuseMe: "Scusi",
+    };
+  }
+}
+
+export { Spanish, French, Tagalog, Nihongo, Hangul, Italian };

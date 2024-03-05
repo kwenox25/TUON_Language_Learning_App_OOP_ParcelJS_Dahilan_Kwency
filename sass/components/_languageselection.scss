@@ -11,10 +11,7 @@
 }
 
 #languageSelection-con {
-  height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // // justify-content: center;
+  margin-bottom: 70px;
 }
 
 .meter2 {
@@ -84,9 +81,30 @@
 }
 
 .content-language h3 {
+  margin-top: 70px;
+  font-size: 1.2em;
   text-align: center;
 }
 
+.content-language p {
+  margin-top: 10px;
+  text-align: center;
+}
+#greetingsList {
+  padding: 30px;
+  margin-top: 60px;
+}
+#greetingsList li {
+  background-color: #fff;
+  padding: 20px;
+  list-style: none;
+
+  font-size: 1.2em;
+}
+
+.languange--list {
+  margin-top: 108px;
+}
 @media screen and (min-width: 768px) {
 }
 
