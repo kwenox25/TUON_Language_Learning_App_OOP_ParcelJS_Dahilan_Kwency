@@ -39,6 +39,31 @@
   animation: progressBar2 3s ease-in-out both;
 }
 
+#languageList {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#languageList li {
+  list-style: none;
+  flex: 0 0 33.33%; /* Adjust the width for 3 columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#languageList a {
+  text-decoration: none;
+  text-align: center;
+  color: a.$primary-color;
+  font-size: 1.5em;
+}
+
+#languageList li img:hover {
+  transform: scale(1.1);
+}
 @keyframes progressBar2 {
   0% {
     width: 50%; /* Start from 50% */
