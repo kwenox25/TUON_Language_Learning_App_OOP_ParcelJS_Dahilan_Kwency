@@ -1,51 +1,60 @@
 import { burgerMenu } from "./modules/burgermenu.js";
 import { scrollTrigger } from "./modules/scrolltrigger.js";
-// import { Spanish, French, Tagalog } from "./modules/language.js";
-import { Guitar, BassGuitar, Keytar } from "./modules/guitar.js";
+import {
+  Spanish,
+  French,
+  Tagalog,
+  Nihongo,
+  Hangul,
+  Italian,
+} from "./modules/language.js";
 
 if (document.body.getAttribute("data-page") === "home") {
   burgerMenu();
   scrollTrigger();
 } else if (document.body.getAttribute("data-page") === "languageSelection") {
-  const fenderStrat = new Guitar(
-    "Fender",
-    "Stratocastor",
-    "Ocean Blue",
-    6,
-    "Single Coil",
-    "HumberBucker"
-  );
+  let languageSelection = new Spanish();
 
-  const gretschWhiteFalcon = new Guitar(
-    "Gretsch",
-    "Falcon",
-    "White",
-    12,
-    "Filter'Tron",
-    "Filter'Tron"
-  );
+  const languageList = document.querySelector("#languageList");
+  const greetingsList = document.querySelector("#greetingsList");
 
-  const alesisKeytar = new Keytar(
-    "Alesis",
-    "Vortex",
-    "Blue",
-    0,
-    "None",
-    "None",
-    49
-  );
+  languageList.addEventListener("click", (e) => {
+    if (e.target.tagName === "IMG" || e.target.tagName === "P") {
+      const selectedLanguage = e.target
+        .closest("li")
+        .querySelector("p")
+        .textContent.toLowerCase();
+      if (selectedLanguage === "french") {
+        languageSelection = new French();
+      } else if (selectedLanguage === "tagalog") {
+        languageSelection = new Tagalog();
+      } else if (selectedLanguage === "nihongo") {
+        languageSelection = new Nihongo();
+      } else if (selectedLanguage === "hangul") {
+        languageSelection = new Hangul();
+      } else if (selectedLanguage === "italian") {
+        languageSelection = new Italian();
+      } else {
+        languageSelection = new Spanish();
+      }
+      renderGreetings();
+    }
+  });
 
-  console.log(alesisKeytar);
-  alesisKeytar.slide();
+  function renderGreetings() {
+    greetingsList.innerHTML = "";
 
-  console.log(fenderStrat);
-  fenderStrat.strum();
+    const translations = languageSelection.translations;
 
-  console.log(gretschWhiteFalcon);
-  gretschWhiteFalcon.strum();
+    for (const key in translations) {
+      if (Object.hasOwnProperty.call(translations, key)) {
+        const li = document.createElement("li");
+        li.textContent = `${key}: "${translations[key]}"`;
+        greetingsList.appendChild(li);
+      }
+    }
+  }
 
-  const fenderPrecisionBass = new BassGuitar();
-
-  console.log(fenderPrecisionBass);
-  fenderPrecisionBass.slapDaBass();
+  console.log("OOP working");
+  renderGreetings();
 }
