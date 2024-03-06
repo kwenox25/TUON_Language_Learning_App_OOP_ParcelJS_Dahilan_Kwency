@@ -194,126 +194,77 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-var Spanish = exports.Spanish = /*#__PURE__*/function () {
-  function Spanish() {
-    _classCallCheck(this, Spanish);
-    this.translations = {
-      hi: "Hola",
-      goodMorning: "Buenos días",
-      goodNight: "Buenas noches",
-      iLoveYou: "Te quiero",
-      sorry: "Lo siento",
-      thankyou: "Gracias",
-      excuseMe: "Perdón"
-    };
+var Language = /*#__PURE__*/function () {
+  function Language(hi, goodMorning, goodNight, iLoveYou, sorry, thankyou, excuseMe) {
+    _classCallCheck(this, Language);
+    this.hi = hi;
+    this.goodMorning = goodMorning;
+    this.goodNight = goodNight;
+    this.iLoveYou = iLoveYou;
+    this.sorry = sorry;
+    this.thankyou = thankyou;
+    this.excuseMe = excuseMe;
   }
-  _createClass(Spanish, [{
+  _createClass(Language, [{
     key: "translate",
     value: function translate(key) {
-      if (this.translations[key]) {
-        return this.translations[key];
+      if (this[key]) {
+        return this[key];
       } else {
-        return "Translation not available for \"".concat(key, "\" in Spanish");
+        return "Translation not available for \"".concat(key, "\" in this language");
       }
     }
   }]);
-  return Spanish;
+  return Language;
 }();
-var French = exports.French = /*#__PURE__*/function (_Spanish) {
-  _inherits(French, _Spanish);
+var Spanish = exports.Spanish = /*#__PURE__*/function (_Language) {
+  _inherits(Spanish, _Language);
+  function Spanish() {
+    _classCallCheck(this, Spanish);
+    return _callSuper(this, Spanish, ["Hola", "Buenos días", "Buenas noches", "Te quiero", "Lo siento", "Gracias", "Perdón"]);
+  }
+  return _createClass(Spanish);
+}(Language);
+var French = exports.French = /*#__PURE__*/function (_Language2) {
+  _inherits(French, _Language2);
   function French() {
-    var _this;
     _classCallCheck(this, French);
-    _this = _callSuper(this, French);
-    _this.translations = {
-      hi: "Bonjour",
-      goodMorning: "Bonjour",
-      goodNight: "Bonne nuit",
-      iLoveYou: "Je t'aime",
-      sorry: "Désolé",
-      thankyou: "Merci",
-      excuseMe: "Excusez-moi"
-    };
-    return _this;
+    return _callSuper(this, French, ["Bonjour", "Bonjour", "Bonne nuit", "Je t'aime", "Désolé", "Merci", "Excusez-moi"]);
   }
   return _createClass(French);
-}(Spanish);
-var Tagalog = exports.Tagalog = /*#__PURE__*/function (_Spanish2) {
-  _inherits(Tagalog, _Spanish2);
+}(Language);
+var Tagalog = exports.Tagalog = /*#__PURE__*/function (_Language3) {
+  _inherits(Tagalog, _Language3);
   function Tagalog() {
-    var _this2;
     _classCallCheck(this, Tagalog);
-    _this2 = _callSuper(this, Tagalog);
-    _this2.translations = {
-      hi: "Kamusta",
-      goodMorning: "Magandang umaga",
-      goodNight: "Magandang gabi",
-      iLoveYou: "Mahal kita",
-      sorry: "Pasensya na",
-      thankyou: "Salamat",
-      excuseMe: "Paumanhin"
-    };
-    return _this2;
+    return _callSuper(this, Tagalog, ["Kamusta", "Magandang umaga", "Magandang gabi", "Mahal kita", "Pasensya na", "Salamat", "Paumanhin"]);
   }
   return _createClass(Tagalog);
-}(Spanish);
-var Nihongo = exports.Nihongo = /*#__PURE__*/function (_Spanish3) {
-  _inherits(Nihongo, _Spanish3);
+}(Language);
+var Nihongo = exports.Nihongo = /*#__PURE__*/function (_Language4) {
+  _inherits(Nihongo, _Language4);
   function Nihongo() {
-    var _this3;
     _classCallCheck(this, Nihongo);
-    _this3 = _callSuper(this, Nihongo);
-    _this3.translations = {
-      hi: "Konnichiwa",
-      goodMorning: "Ohayou gozaimasu",
-      goodNight: "Oyasumi nasai",
-      iLoveYou: "Aishiteru",
-      sorry: "Sumimasen",
-      thankyou: "Arigatou gozaimasu",
-      excuseMe: "Gomen nasai"
-    };
-    return _this3;
+    return _callSuper(this, Nihongo, ["Konnichiwa", "Ohayou gozaimasu", "Oyasumi nasai", "Aishiteru", "Sumimasen", "Arigatou gozaimasu", "Gomen nasai"]);
   }
   return _createClass(Nihongo);
-}(Spanish);
-var Hangul = exports.Hangul = /*#__PURE__*/function (_Spanish4) {
-  _inherits(Hangul, _Spanish4);
+}(Language);
+var Hangul = exports.Hangul = /*#__PURE__*/function (_Language5) {
+  _inherits(Hangul, _Language5);
   function Hangul() {
-    var _this4;
     _classCallCheck(this, Hangul);
-    _this4 = _callSuper(this, Hangul);
-    _this4.translations = {
-      hi: "Annyeonghaseyo",
-      goodMorning: "Annyeonghaseyo",
-      goodNight: "Annyeonghi jumuseyo",
-      iLoveYou: "Saranghae",
-      sorry: "Mianhamnida",
-      thankyou: "Gamsahamnida",
-      excuseMe: "Silryehabnida"
-    };
-    return _this4;
+    return _callSuper(this, Hangul, ["Annyeonghaseyo", "Annyeonghaseyo", "Annyeonghi jumuseyo", "Saranghae", "Mianhamnida", "Gamsahamnida", "Silryehabnida"]);
   }
   return _createClass(Hangul);
-}(Spanish);
-var Italian = exports.Italian = /*#__PURE__*/function (_Spanish5) {
-  _inherits(Italian, _Spanish5);
+}(Language);
+var Italian = exports.Italian = /*#__PURE__*/function (_Language6) {
+  _inherits(Italian, _Language6);
   function Italian() {
-    var _this5;
     _classCallCheck(this, Italian);
-    _this5 = _callSuper(this, Italian);
-    _this5.translations = {
-      hi: "Ciao",
-      goodMorning: "Buongiorno",
-      goodNight: "Buona notte",
-      iLoveYou: "Ti amo",
-      sorry: "Mi dispiace",
-      thankyou: "Grazie",
-      excuseMe: "Scusi"
-    };
-    return _this5;
+    return _callSuper(this, Italian, ["Ciao", "Buongiorno", "Buona notte", "Ti amo", "Mi dispiace", "Grazie", "Scusi"]);
   }
   return _createClass(Italian);
-}(Spanish);
+}(Language);
 },{}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
@@ -348,11 +299,10 @@ if (document.body.getAttribute("data-page") === "home") {
   });
   function renderGreetings() {
     greetingsList.innerHTML = "";
-    var translations = languageSelection.translations;
-    for (var key in translations) {
-      if (Object.hasOwnProperty.call(translations, key)) {
+    for (var key in languageSelection) {
+      if (Object.hasOwnProperty.call(languageSelection, key)) {
         var li = document.createElement("li");
-        li.textContent = "".concat(key, ": \"").concat(translations[key], "\"");
+        li.textContent = "".concat(key, ": \"").concat(languageSelection[key], "\"");
         greetingsList.appendChild(li);
       }
     }
@@ -385,7 +335,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52311" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53944" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
