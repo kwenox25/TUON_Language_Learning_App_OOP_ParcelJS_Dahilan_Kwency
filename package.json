@@ -1,7 +1,7 @@
 {
   "name": "dahilan_k_gesalan_a_oop_parceljs",
   "version": "1.0.0",
-  "description": "",
+  "description": "TUON Learning App is a web application designed to help users learn languages through interactive lessons and exercises. Built with modern JavaScript using Object-Oriented Programming (OOP) principles, this app provides an intuitive and immersive learning experience for language enthusiasts of all levels.",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
